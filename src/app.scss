@@ -1,0 +1,211 @@
+@font-face {
+	font-family: 'Varela Round';
+	src: url(/fonts/VarelaRound-Regular.ttf);
+	font-display: swap;
+}
+
+* {
+	font-family: 'Varela Round', Helvetica, sans-serif !important;
+}
+
+/* Custom BS-Variables */
+$primary: #00ffff;
+$secondary: #7272FF;
+
+
+$card-bg: rgba(255, 255, 255, 0.1);
+$card-border-color: rgba(255, 255, 255, 0.5);
+$card-border-radius: 0.5rem;
+
+/* Import Bootstrap SCCS */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+
+// Custom Styles
+.index-jumbotron-hf {
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image:
+		linear-gradient(to bottom, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.9) 100%),
+		url(/images/stock/altumcode-dC6Pb2JdAqs-unsplash.webp);
+}
+
+body {
+	color: white;
+}
+
+.container-fluid {
+	background-size: cover;
+	background-position: center center;
+	// background-attachment: fixed;
+}
+
+#container1 {
+	padding-top: 5rem !important;
+	height: 100vh;
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 0.0) 0%, rgba(0, 0, 0, 1) 100%),
+		url(/images/stock/altumcode-dC6Pb2JdAqs-unsplash.webp);
+}
+
+#vita {
+	background-image:
+
+		radial-gradient(rgba(0, 0, 0, 0.0), rgba(0, 0, 0, 1)),
+		url(/images/stock/pexels-nick-demou-2473183.webp);
+}
+
+#container2 {
+	background-image: url(/images/backgrounds/stacked-waves-haikei-1.png);
+}
+
+#container3 {
+	background-image:
+		linear-gradient(to bottom, #7272FF 0%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 1) 100%),
+		url(/images/stock/laptop-5673901_1920.webp);
+}
+
+#tennis {
+	background-image:
+		linear-gradient(to bottom, rgba(0, 0, 0, 1) 10%, rgba(0, 0, 0, 0.0) 100%),
+		url(/images/stock/pexels-cottonbro-5740578.webp);
+}
+
+.flip {
+	transform: rotate(180deg);
+}
+
+.card {
+	backdrop-filter: blur(0.5rem);
+
+	background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1))
+}
+
+.navbar {
+	backdrop-filter: blur(1rem);
+
+	background-color: rgba(255, 255, 255, 0.1);
+
+	//background: linear-gradient(to right bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.1))
+
+}
+
+$timeline-color: white;
+
+.timeline-container {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.timeline {
+	width: 80%;
+	height: auto;
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+}
+
+.timeline ul {
+	padding: 0;
+}
+
+.timeline ul li:hover {
+	border-color: $primary;
+}
+
+.timeline ul li:hover::before {
+	background-color: $primary;
+}
+
+@media only screen and (max-width: 767px) {
+	.timeline:before {
+		content: "";
+		position: absolute;
+		//top: 200;
+		//left: 50%;
+		//transform: translateX(-50%);
+		width: 2px;
+		height: 100%;
+		background-color: $timeline-color;
+	}
+
+	.timeline ul li {
+		position: relative;
+		width: 90%;
+		transform: translateX(30px);
+		border-top-left-radius: 0;
+	}
+
+	.timeline ul li::before {
+		content: "";
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: $timeline-color;
+		top: 0px;
+		transform: translate(50%, -50%);
+		left: -50px; // +1 due to border on card
+	}
+
+}
+
+@media only screen and (min-width: 768px) {
+	.timeline:before {
+		content: "";
+		position: absolute;
+		//top: 200;
+		left: 50%;
+		transform: translateX(-50%);
+		width: 2px;
+		height: 100%;
+		background-color: $timeline-color;
+	}
+
+	.timeline ul li {
+		position: relative;
+		width: 50%;
+	}
+
+	.timeline ul li:nth-child(odd) {
+		float: left;
+		clear: right;
+		transform: translateX(-30px);
+		border-top-right-radius: 0;
+	}
+
+	.timeline ul li:nth-child(even) {
+		float: right;
+		clear: left;
+		transform: translateX(30px);
+		border-top-left-radius: 0;
+	}
+
+	.timeline ul li::before {
+		content: "";
+		position: absolute;
+		height: 20px;
+		width: 20px;
+		border-radius: 50%;
+		background-color: $timeline-color;
+		top: 0px;
+	}
+
+	.timeline ul li:nth-child(odd)::before {
+		transform: translate(50%, -50%);
+		right: -31px; // +1 due to border on card
+	}
+
+	.timeline ul li:nth-child(even)::before {
+		transform: translate(-50%, -50%);
+		left: -31px; // +1 due to border on card
+	}
+}
+
+#container2 .card:hover {
+	border-color: $primary;
+}
