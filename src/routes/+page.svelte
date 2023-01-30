@@ -110,15 +110,20 @@
 
 <section class="container-fluid py-5 d-flex align-items-center" id="container1">
 	<div class="container">
-		<div class="card p-5 text-center">
-			<h1 class="display-4">
-				<span id="name" />
+		<div class="card p-5">
+			<h1 class="display-4 glitch title">
+				<span aria-hidden="true">Henrik Fiedler</span>
 				Henrik Fiedler
+				<span aria-hidden="true">Henrik Fiedler</span>
 			</h1>
 			<hr />
-			<h2 class="lead">
-				<span id="subtitle" />
-				Consultant. Developer.
+			<h2 class="lead glitch subtitle">
+				<span class="subtitle1" aria-hidden="true">Consultant.</span>
+				<span class="subtitle1">Consultant.</span>
+				<span class="subtitle1" aria-hidden="true">Consultant.</span>
+				<span class="subtitle2" aria-hidden="true">Developer.</span>
+				<span class="subtitle2">Developer.</span>
+				<span class="subtitle2" aria-hidden="true">Developer.</span>
 			</h2>
 		</div>
 	</div>
@@ -615,35 +620,32 @@
 					<ul class="list-inline">
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://bookcourts.de"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<Fa icon={faGlobe} size="2x" />
 							</a>
 						</li>
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://instagram.com/bookcourtsde"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faInstagram} />
+								<Fa icon={faInstagram} size="2x" />
 							</a>
 						</li>
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://twitter.com/bookcourtsde"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faTwitter} />
+								<Fa icon={faTwitter} size="2x" />
 							</a>
 						</li>
 					</ul>
@@ -655,35 +657,32 @@
 					<ul class="list-inline">
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://tc-donzdorf.de"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<Fa icon={faGlobe} size="2x" />
 							</a>
 						</li>
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://facebook.com/tcdonzdorf"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faFacebook} />
+								<Fa icon={faFacebook} size="2x" />
 							</a>
 						</li>
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://instagram.com/tcdonzdorf"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faInstagram} />
+								<Fa icon={faInstagram} size="2x" />
 							</a>
 						</li>
 					</ul>
@@ -696,13 +695,12 @@
 					<ul class="list-inline">
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://seevital.de"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<Fa icon={faGlobe} size="2x" />
 							</a>
 						</li>
 					</ul>
@@ -710,13 +708,12 @@
 					<ul class="list-inline">
 						<li class="list-inline-item">
 							<a
-								class="h5"
 								href="https://hotellitz.de"
 								target="_blank"
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<Fa icon={faGlobe} size="2x" />
 							</a>
 						</li>
 					</ul>

@@ -117,9 +117,162 @@ $timeline-color: white;
 	border-color: $primary;
 }
 
+.timeline ul li:hover h3 {
+	color: $primary;
+}
+
 .timeline ul li:hover::before {
 	background-color: $primary;
 }
+
+#container2 .card:hover {
+	border-color: $primary;
+}
+
+// Glitch Effect
+.glitch {
+	text-transform: uppercase;
+	position: relative;
+}
+
+.glitch span {
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.glitch span:first-child {
+	animation: glitch 650ms infinite;
+	clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
+	transform: translate(-0.025em, -0.0125em);
+	/* color: green; */
+	opacity: 0.8;
+}
+
+.glitch span:last-child {
+	animation: glitch 375ms infinite;
+	/* clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%); */
+	clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+	transform: translate(0.0125em, 0.025em);
+	/* color: red; */
+	opacity: 0.8;
+}
+
+.glitch.title {
+	animation: glitch 500ms infinite;
+}
+
+.glitch.subtitle {
+	animation: glitch 400ms infinite;
+}
+
+.glitch .subtitle1 {
+	animation: opacity1 6s infinite;
+}
+
+.glitch .subtitle2 {
+	animation: opacity2 6s infinite;
+}
+
+@keyframes glitch {
+	0% {
+		text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+			-0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+	}
+
+	14% {
+		text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75), -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
+			-0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
+	}
+
+	15% {
+		text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+			-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+	}
+
+	49% {
+		text-shadow: -0.05em -0.025em 0 rgba(255, 0, 0, 0.75), 0.025em 0.025em 0 rgba(0, 255, 0, 0.75),
+			-0.05em -0.05em 0 rgba(0, 0, 255, 0.75);
+	}
+
+	50% {
+		text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75),
+			0 -0.05em 0 rgba(0, 0, 255, 0.75);
+	}
+
+	99% {
+		text-shadow: 0.025em 0.05em 0 rgba(255, 0, 0, 0.75), 0.05em 0 0 rgba(0, 255, 0, 0.75),
+			0 -0.05em 0 rgba(0, 0, 255, 0.75);
+	}
+
+	100% {
+		text-shadow: -0.025em 0 0 rgba(255, 0, 0, 0.75), -0.025em -0.025em 0 rgba(0, 255, 0, 0.75),
+			-0.025em -0.05em 0 rgba(0, 0, 255, 0.75);
+	}
+}
+
+@keyframes opacity1 {
+	0% {
+		opacity: 100%;
+	}
+
+	/* 25% {
+			opacity: 75%;
+		}
+		26% {
+			opacity: 0%;
+		} */
+	50% {
+		opacity: 0%;
+	}
+
+	100% {
+		opacity: 100%;
+	}
+}
+
+@keyframes opacity2 {
+	0% {
+		opacity: 0%;
+	}
+
+	/* 25% {
+			opacity: 0%;
+		}
+		26% {
+			opacity: 75%;
+		} */
+	50% {
+		opacity: 100%;
+	}
+
+	/* 74% {
+			opacity: 75%;
+		}
+		75% {
+			opacity: 0%;
+		} */
+	100% {
+		opacity: 0%;
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+	*,
+	::before,
+	::after {
+		animation-delay: -1ms !important;
+		animation-duration: 1ms !important;
+		animation-iteration-count: 1 !important;
+		background-attachment: initial !important;
+		scroll-behavior: auto !important;
+		transition-duration: 0s !important;
+		transition-delay: 0s !important;
+	}
+}
+
+// -- Glitch Effect
 
 @media only screen and (max-width: 767px) {
 	.timeline:before {
@@ -204,8 +357,4 @@ $timeline-color: white;
 		transform: translate(-50%, -50%);
 		left: -31px; // +1 due to border on card
 	}
-}
-
-#container2 .card:hover {
-	border-color: $primary;
 }
