@@ -1,4 +1,5 @@
-import adapter from '@sveltejs/adapter-auto';
+// import adapter from '@sveltejs/adapter-auto';
+import adapter from '@sveltejs/adapter-node';
 // import adapter from '@sveltejs/adapter-static';
 import { vitePreprocess } from '@sveltejs/kit/vite';
 
@@ -9,6 +10,7 @@ const config = {
 	preprocess: vitePreprocess(),
 
 	kit: {
+		// for SSG
 		/* adapter: adapter({
 			// default options are shown. On some platforms
 			// these options are set automatically — see below
