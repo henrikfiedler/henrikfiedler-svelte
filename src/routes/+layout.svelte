@@ -9,9 +9,49 @@
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 	let year = new Date();
+
+	import {
+		Collapse,
+		Navbar,
+		NavbarToggler,
+		NavbarBrand,
+		Nav,
+		NavItem,
+		NavLink,
+		Dropdown,
+		DropdownToggle,
+		DropdownMenu,
+		DropdownItem
+	} from 'sveltestrap';
+
+	let isOpen = false;
 </script>
 
-<header>
+<Navbar color="light" light expand="md">
+	<NavbarBrand href="/">sveltestrap</NavbarBrand>
+	<NavbarToggler on:click={() => (isOpen = !isOpen)} />
+	<Collapse {isOpen} navbar expand="md" on:update={() => (isOpen = !isOpen)}>
+		<Nav class="ms-auto" navbar>
+			<NavItem>
+				<NavLink href="#components/">Components</NavLink>
+			</NavItem>
+			<NavItem>
+				<NavLink href="https://github.com/bestguy/sveltestrap">GitHub</NavLink>
+			</NavItem>
+			<Dropdown nav inNavbar>
+				<DropdownToggle nav caret>Options</DropdownToggle>
+				<DropdownMenu end>
+					<DropdownItem>Option 1</DropdownItem>
+					<DropdownItem>Option 2</DropdownItem>
+					<DropdownItem divider />
+					<DropdownItem>Reset</DropdownItem>
+				</DropdownMenu>
+			</Dropdown>
+		</Nav>
+	</Collapse>
+</Navbar>
+
+<!-- <header>
 	<nav id="nav" class="navbar navbar-expand navbar-dark fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="/">
@@ -27,7 +67,7 @@
 			</a>
 		</div>
 	</nav>
-</header>
+</header> -->
 
 <main class="flex-grow-1">
 	<slot />
