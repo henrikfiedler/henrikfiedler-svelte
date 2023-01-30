@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Fa from 'svelte-fa';
+	/* import Fa from 'svelte-fa';
 	import { faAngleDown, faDatabase, faEnvelope, faGlobe } from '@fortawesome/free-solid-svg-icons';
 	import {
 		faHtml5,
@@ -16,7 +16,7 @@
 		faTwitter,
 		faInstagram,
 		faMicrosoft
-	} from '@fortawesome/free-brands-svg-icons';
+	} from '@fortawesome/free-brands-svg-icons'; */
 </script>
 
 <svelte:head>
@@ -90,7 +90,7 @@
 							aria-controls="info1"
 							aria-label="info1"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info1">
@@ -142,7 +142,7 @@
 							aria-controls="info2"
 							aria-label="info2"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info2">
@@ -151,10 +151,10 @@
 							fugiat, molestias ipsam at inventore mollitia ut dolorem.
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faHtml5} />&nbsp;
-							<Fa icon={faCss3} />&nbsp;
-							<Fa icon={faJsSquare} />&nbsp;
-							<Fa icon={faAngular} />
+							<!--<Fa icon={faHtml5} />-->&nbsp;
+							<!--<Fa icon={faCss3} />-->&nbsp;
+							<!--<Fa icon={faJsSquare} />-->&nbsp;
+							<!--<Fa icon={faAngular} />-->
 						</p>
 						<p>
 							<button
@@ -183,7 +183,7 @@
 							aria-controls="info3"
 							aria-label="info3"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info3">
@@ -192,7 +192,7 @@
 							pariatur laboriosam asperiores voluptatibus dicta facilis cumque nam.
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faNode} />
+							<!--<Fa icon={faNode} />-->
 						</p>
 						<p>
 							<button
@@ -221,7 +221,7 @@
 							aria-controls="info4"
 							aria-label="info4"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info4">
@@ -230,7 +230,7 @@
 							pariatur laboriosam asperiores voluptatibus dicta facilis cumque nam.
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faPhp} />
+							<!--<Fa icon={faPhp} />-->
 						</p>
 						<p>
 							<button
@@ -259,7 +259,7 @@
 							aria-controls="info5"
 							aria-label="info5"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info5">
@@ -268,7 +268,7 @@
 							corrupti quaerat provident fugit atque ut necessitatibus eveniet.
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faWordpress} />
+							<!--<Fa icon={faWordpress} />-->
 						</p>
 						<p>
 							<button
@@ -297,7 +297,7 @@
 							aria-controls="info6"
 							aria-label="info6"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info6">
@@ -306,7 +306,7 @@
 							aspernatur voluptate neque culpa quam. Culpa quam quaerat mollitia!
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faDatabase} />
+							<!--<Fa icon={faDatabase} />-->
 						</p>
 						<p>
 							<button
@@ -335,7 +335,7 @@
 							aria-controls="info7"
 							aria-label="info7"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info7">
@@ -344,9 +344,9 @@
 							corrupti molestias error officiis. Doloribus temporibus corrupti tenetur excepturi?
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faApple} />&nbsp;
-							<Fa icon={faAppStoreIos} />&nbsp;
-							<Fa icon={faSwift} />
+							<!--<Fa icon={faApple} />-->&nbsp;
+							<!--<Fa icon={faAppStoreIos} />-->&nbsp;
+							<!--<Fa icon={faSwift} />-->
 						</p>
 						<p>
 							<button
@@ -375,7 +375,7 @@
 							aria-controls="info8"
 							aria-label="info8"
 						>
-							<Fa icon={faAngleDown} />
+							<!--<Fa icon={faAngleDown} />-->
 						</button>
 					</h3>
 					<div class="collapse" id="info8">
@@ -384,9 +384,9 @@
 							corrupti molestias error officiis. Doloribus temporibus corrupti tenetur excepturi?
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faFacebook} />&nbsp;
-							<Fa icon={faInstagram} />&nbsp;
-							<Fa icon={faTwitter} />
+							<!--<Fa icon={faFacebook} />-->&nbsp;
+							<!--<Fa icon={faInstagram} />-->&nbsp;
+							<!--<Fa icon={faTwitter} />-->
 						</p>
 						<p>
 							<button
@@ -415,7 +415,7 @@
 							aria-controls="info9"
 							aria-label="info9"
 						>
-							<Fa icon={faAngleDown}>></Fa>
+							<!--<Fa icon={faAngleDown}>-->
 						</button>
 					</h3>
 					<div class="collapse" id="info9">
@@ -424,8 +424,8 @@
 							corrupti molestias error officiis. Doloribus temporibus corrupti tenetur excepturi?
 						</p>
 						<p class="text-start" style="font-size: 40px">
-							<Fa icon={faApple} />&nbsp;
-							<Fa icon={faMicrosoft} />
+							<!--<Fa icon={faApple} />-->&nbsp;
+							<!--<Fa icon={faMicrosoft} />-->
 						</p>
 						<p>
 							<button
@@ -447,7 +447,7 @@
 					class="btn btn-lg btn-outline-primary"
 					aria-label="Read more about Seminole tax hike"
 				>
-					<Fa icon={faEnvelope} class="me-1" />
+					<!--<Fa icon={faEnvelope} class="me-1" />-->
 					<span>Kontakt</span>
 				</a>
 			</div>
@@ -471,7 +471,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<!--<Fa icon={faGlobe} />-->
 							</a>
 						</li>
 						<li class="list-inline-item">
@@ -482,7 +482,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faInstagram} />
+								<!--<Fa icon={faInstagram} />-->
 							</a>
 						</li>
 						<li class="list-inline-item">
@@ -493,7 +493,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faTwitter} />
+								<!--<Fa icon={faTwitter} />-->
 							</a>
 						</li>
 					</ul>
@@ -511,7 +511,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<!--<Fa icon={faGlobe} />-->
 							</a>
 						</li>
 						<li class="list-inline-item">
@@ -522,7 +522,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faFacebook} />
+								<!--<Fa icon={faFacebook} />-->
 							</a>
 						</li>
 						<li class="list-inline-item">
@@ -533,7 +533,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faInstagram} />
+								<!--<Fa icon={faInstagram} />-->
 							</a>
 						</li>
 					</ul>
@@ -552,7 +552,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<!--<Fa icon={faGlobe} />-->
 							</a>
 						</li>
 					</ul>
@@ -566,7 +566,7 @@
 								rel="noreferrer"
 								aria-label="Read more about Seminole tax hike"
 							>
-								<Fa icon={faGlobe} />
+								<!--<Fa icon={faGlobe} />-->
 							</a>
 						</li>
 					</ul>
@@ -579,7 +579,7 @@
 				class="btn btn-lg btn-outline-primary"
 				aria-label="Read more about Seminole tax hike"
 			>
-				<Fa icon={faEnvelope} class="me-1" />
+				<!--<Fa icon={faEnvelope} class="me-1" />-->
 				<span>Kontakt</span>
 			</a>
 		</div>

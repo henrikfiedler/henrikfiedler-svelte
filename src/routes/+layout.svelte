@@ -2,11 +2,10 @@
 	// import type { LayoutData } from './$types';
 	// export let data: LayoutData;
 	import '../app.scss';
-	// import 'bootstrap/dist/css/bootstrap.min.css';
 	import 'bootstrap';
 
-	import Fa from 'svelte-fa';
-	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+	// import Fa from 'svelte-fa';
+	// import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 	let year = new Date();
 </script>
@@ -53,7 +52,7 @@
 				<ul class="list-unstyled">
 					<li>
 						<a class="text-decoration-none" href="mailto:henrik@henrikfiedler.de">
-							<Fa icon={faEnvelope} />
+							<!-- <Fa icon={faEnvelope} /> -->
 							<span>henrik@henrikfiedler.de</span>
 						</a>
 					</li>
