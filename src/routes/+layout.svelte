@@ -2,7 +2,8 @@
 	// import type { LayoutData } from './$types';
 	// export let data: LayoutData;
 	import '../app.scss';
-	import 'bootstrap';
+	// import 'bootstrap/dist/js/bootstrap.bundle';
+	// import 'bootstrap';
 
 	import Fa from 'svelte-fa';
 	import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
