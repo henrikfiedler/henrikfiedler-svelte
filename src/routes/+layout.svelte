@@ -28,7 +28,7 @@
 </script>
 
 <header>
-	<nav id="nav" class="navbar navbar-expand navbar-dark fixed-top">
+	<nav id="nav" class="navbar navbar-expand bg-tertiary fixed-top">
 		<div class="container">
 			<a class="navbar-brand" href="/">
 				<img
@@ -49,7 +49,7 @@
 	<slot />
 </main>
 
-<footer class="footer bg-dark text-white py-2">
+<footer class="footer bg-tertiary py-2">
 	<div class="container">
 		<div class="row">
 			<div class="col-md-6">
