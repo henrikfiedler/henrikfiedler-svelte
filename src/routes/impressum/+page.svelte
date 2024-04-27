@@ -14,7 +14,7 @@
 		<h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
 		<p>
 			Henrik Fiedler<br />
-			Gef&auml;llholzstra&szlig;e 37<br />
+			Klosterweg 29<br />
 			73072 Donzdorf
 		</p>
 
