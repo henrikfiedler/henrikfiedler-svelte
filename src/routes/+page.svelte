@@ -23,7 +23,6 @@
 		faInstagram,
 		faMicrosoft
 	} from '@fortawesome/free-brands-svg-icons';
-	import { Collapse, Button, Card } from 'sveltestrap';
 
 	let workareas: Workarea[] = [
 		{

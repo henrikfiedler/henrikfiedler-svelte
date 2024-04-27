@@ -10,20 +10,6 @@
 
 	let year = new Date();
 
-	import {
-		Collapse,
-		Navbar,
-		NavbarToggler,
-		NavbarBrand,
-		Nav,
-		NavItem,
-		NavLink,
-		Dropdown,
-		DropdownToggle,
-		DropdownMenu,
-		DropdownItem
-	} from 'sveltestrap';
-
 	let isOpen = false;
 </script>
 

@@ -37,7 +37,6 @@
 		"@vercel/speed-insights": "^1.0.10",
 		"bootstrap": "^5.3.0",
 		"svelte-fa": "^3.0.3",
-		"svelte-preprocess": "^5.0.1",
-		"sveltestrap": "^5.11.3"
+		"svelte-preprocess": "^5.0.1"
 	}
 }
